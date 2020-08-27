@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS|Contact</title>
+    <link rel="stylesheet" href="style_contact.css">
+    <link rel="stylesheet" href="contact_responsive.css" media="screen and (max-width:950px)">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <div class="wrap">
+    <header>
+        <div class="header-inner">
+        <img src="logo2.png" alt="会社のロゴ">
+        <ul id="response-hidden">
+            <li><a href="#">企業情報</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="#">企業情報</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">お知らせ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+                <div class="icon-wrap">
+                    <a href="#"><i class="fab fa-twitter-square fa-3x icon-set"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square fa-3x icon-set" id="icon"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="TopPage">
+        <div class="Billboard">
+            <h1 id="h-1">CONTACT</h1>
+            <h2 id="h-2">お問い合わせ</h2>
+        </div>
+        <img src="office_S.jpg" alt="会社ミーティング">
+    </div>
+    <div class="ct-form">
+        <form action="#">
+            <div id="form-wrap1" class="frm">
+                <h2><span>必須</span>お問い合わせ項目</h2>
+                <select name="お問合せ" required>
+                    <option value="1">仕事の依頼やご相談</option>
+                    <option value="2">制作パートナーに関するお問い合わせ</option>
+                    <option value="3">その他のお問い合わせ</option>
+                </select>
+            </div>
+            <div id="form-wrap2" class="frm">
+                <h3><span>必須</span>お名前</h3>
+                <input type="name" id="name" required>
+            </div>
+            <div id="form-wrap3" class="frm">
+                <h4><span>必須</span>メールアドレス</h4>
+                <input type="email" name="email" required>
+            </div>
+            <div id="form-wrap4" class="frm">
+                <h5>電話番号</h5>
+                <input type="tel" id="tel">
+            </div>
+            <div id="form-wrap5" class="frm">
+                <h6>会社名</h6>
+                <input type="text">
+            </div>
+            <div id="form-wrap6" class="frm">
+                <h6><span>必須</span>お問合せ内容</h6>
+                <textarea cols="30" rows="10" name="textarea" required></textarea>
+            </div>
+            <button>入力内容を送信する</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer_bar" id="char1">
+                <img src="logo2.png" alt="会社ロゴ">
+                <p>Created by Hiroto Kashima</p>
+            </div>
+            <nav id="char2">
+                <ul>
+                    <li><a href="#">トップ</a></li>
+                    <li><a href="#">企業情報</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    </div>
+    <script type="text/javascript" src="contact_js.js"></script>
+</body>
+</html>
